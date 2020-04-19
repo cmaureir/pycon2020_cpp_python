@@ -1,5 +1,12 @@
 #  C++ ♥ Python: from modules to hybrid applications
 
+PyCon US 2020 :snake: [check more talks! tutorials! and more!](https://us.pycon.org/2020/online/).
+
+## Quickstart
+
+Open the `index.html` inside the [slides](slides) directory for the slides.
+Check the [code](code) directory for all the examples from the talk.
+
 ## Description
 
 Extending Python with C is a technique that many popular modules use for
@@ -47,6 +54,6 @@ understand how to extend C++ applications with Python
   * Creating Python bindings from a C++ library,
   * Embedding a Python interpreter into a C++ application,
   * Run-time interaction of a Qt/C++ desktop application with Python,
-* Final remarks **(5 minutes)**
+* Final remarks
   * Additional `std::` modern features to include in Python modules,
   * Brief comments on extending Python with other languages
