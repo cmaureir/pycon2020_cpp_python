@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>C++ ♥ Python: from modules to hybrid applications</title>
+
+  <meta name="description" content="C++ ♥ Python: from modules to hybrid applications">
+  <meta name="author" content="Cristian Maureira-Fredes">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/qt.css" id="theme">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <script src="js/print-pdf-exports.js"></script>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<!--*****************************************************************************-->
+<body>
+<div class="reveal">
+<div class="slides">
+  <section>
+    <!--♥ -->
+    <h2>C++ <i class="red">❤ </i> Python</h2>
+    <h4><i class="yellow">From <code style="font-weight: normal; color: #aaaaaa;font-size:80%;">__modules__</code> to <i class="blue">ₕybᵣᵢd</i> applications</i></h4>
+    <p style="font-size: 60%;margin-top: 10%;">
+      <span style="font-size: 130%;">Dr. <i class="yellow">Cristián</i> Maureira-Fredes<br/></span>
+      <i class="blue-light">R&D Manager</i> @ TQtC
+            <br/>
+            <br/>
+        <img class="plain" src="img/twitter.png" style="height: 50px;">
+        <img class="plain" src="img/github_white.png"  style="height: 50px;">
+        <img class="plain" src="img/linkedin.png"  style="height: 50px;"><br/>
+           @cmaureir<br/>
+    </p>
+  </section>
+  <!--***************************************************************************-->
+  <section>
+    <h2><img style="width: 10%;vertical-align: middle;" class="plain" src="img/cpp_logo.svg"/> ? &#128533;</h2>
+    <h3><i class="red">Wrong</i> conference</h3>
+  </section>
+
+  <section>
+    <div id="left">
+        <h3><i class="green">Similarities</i></h3>
+        <ul>
+            <li>General purpose</li>
+            <li>Multi paradigm</li>
+        </ul>
+    </div>
+    <div id="rightl">
+        <h3><i class="red">Differences</i></h3>
+        <ul>
+            <li>Statically/Dynamically typed</li>
+            <li>Compiled/Interpreted</li>
+        </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3>But usually we hear...</h3>
+    <p>"C++ is too <i class="red">difficult</i>, but it's <i class="green">fast</i>!"</p>
+    <p>"Python is so <i class="green">easy</i>!, but <i class="red">slow</i>..."</p>
+  </section>
+
+  <section>
+    <h4>Which one then? &#128534;</h4>
+  </section>
+
+  <section>
+    <h3>Let's take a step back...</h3>
+  </section>
+
+  <section>
+    <h2>Python <i class="green-soft">roots</i> &#127793;</h2>
+    <div id="left" style="text-align: center;">
+      <h3>ABC</h3>
+      <pre style="font-size: 40%; width: 92%;"><code class="" data-trim data-noescape>
+      HOW TO RETURN words document:
+         PUT {} IN collection
+         FOR line IN document:
+            FOR word IN split line:
+               IF word not.in collection:
+                  INSERT word IN collection
+         RETURN collection
+      </code></pre>
+    </div>
+    <div id="right" style="text-align: center;">
+      <img class="plain" src="img/c.png" style="width: 60%;" />
+      <p style="font-size: 40%;">The C Programming Language, by Brian W. Kernighan and Dennis M. Ritchie (1978)</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>We have a <i class="green">simple</i> language<br/> with a <i class="green">free pass</i> to<br/><i class="yellow">other</i> languages &#127882;</h3>
+  </section>
+
+  <section>
+    <h3>Using <i class="yellow">C as glue</i></h3>
+    <div id="left">
+        <ul style="font-size: 80%;margin-top: 20%;">
+            <li>New functionalities</li>
+            <li>Improving performance</li>
+            <li>Use existing code</li>
+        </ul>
+    </div>
+    <div id="right">
+      <ul style="font-size: 80%;">
+          <li><img style="width: 20%;vertical-align: middle;" src="img/numpy-logo-300.png" /> Fortran and C (Array)</li>
+          <li><img style="width: 20%;vertical-align: middle;" src="img/pandas-logo-300.png" /> C (Parser)</li>
+          <li><img style="width: 20%;vertical-align: middle;" src="img/pytorch-logo.png" /> C and C++ (Torch)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3>Why C++ then?</h3>
+    C++ and Python can <i class="yellow">help each other</i>.
+  </section>
+
+  <section>
+    <h3>Let's learn C++</h3>
+  </section>
+
+  <section>
+    <h3>Syntax</h3>
+    <div id="left">
+      <pre style="font-size: 50%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // C++
+
+      int i = 1;
+      float pi = 3.14;
+      std::string s = "hello";
+      std::vector&lt;int&gt; l = {1,2,3,4};
+      </code></pre>
+      <pre style="font-size: 50%; width: 92%;"><code class="c++" data-trim data-noescape>
+      int add(int a, int b) {
+        return a + b;
+      }
+      </code></pre>
+      <pre style="font-size: 50%; width: 92%;"><code class="c++" data-trim data-noescape>
+      int main() {
+        int c = add(3, 2);
+        std::cout << c << std::endl;
+        return 0;
+      }
+      </code></pre>
+    </div>
+    <div id="right">
+      <pre style="font-size: 50%; width: 90%;"><code class="python" data-trim data-noescape>
+      # Python
+
+      i = 1
+      pi = 3.14
+      s = "hello"
+      l = [1,2,3,4]
+      </code></pre>
+      <pre style="font-size: 50%; width: 90%;"><code class="python" data-trim data-noescape>
+      def add(a, b):
+        return a + b
+        &nbsp;
+      </code></pre>
+      <pre style="font-size: 50%; width: 90%;"><code class="python" data-trim data-noescape>
+      if __name__ == "__main__":
+        c = add(3, 2)
+        print(c)
+        &nbsp;
+        &nbsp;
+      </code></pre>
+    </div>
+
+  </section>
+
+  <section>
+    <h3>Congratulations,<br/> you just learned C++ &#127881;</h3>
+  </section>
+
+  <section>
+    <h3>The Evolution</h3>
+    <i class="yellow">From C++11, to C++20</i>
+  </section>
+
+  <section>
+    <h3>C++11</h3>
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // 'auto' type
+      auto a = 0.74;
+      auto b = "hello";
+      </code></pre>
+
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // tuples
+      auto triple = std::make_tuple(1,2,3);
+      std::tie(x, y, z) = triple;
+      </code></pre>
+
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // dictionaries
+      auto d = std::unordered_map&lt;int,std::string&gt;({4, "Mary"},
+                                                   {2, "John"});
+      auto value = d[4];
+      </code></pre>
+
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // lambdas
+      std::sort(v.begin(), v.end(),
+            [](int x, int y) { return std::abs(x) < std::abs(y)});
+      </code></pre>
+  </section>
+
+  <section>
+    <h3>C++14</h3>
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // 'auto' return type
+      auto add(int x, int y) {
+          return x + y;
+      }
+      </code></pre>
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // variable templates
+      template <typename T>
+      constexpr T pi = T(3.14159265359...);
+      </code></pre>
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // binary literals
+      auto b = 0b1101;
+      </code></pre>
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // digits separators
+      auto n = 1'000'000;
+      </code></pre>
+  </section>
+
+  <section>
+    <h3>C++17</h3>
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // unpack when calling functions
+      std::pair<int, int> origin() {
+          return std::pair<int, int> {0, 0}
+      }
+
+      auto [x, y] = origin();
+      </code></pre>
+
+      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      // unpack map values in loop
+      auto items = std::unordered_map<int,std::string>({4, "Mary"}, {2, "John"});
+      for ( const auto& [key, value]: items) {
+          //...
+      }
+      </code></pre>
+  </section>
+
+  <section>
+    <h3>C++20</h3>
+      <div id="left">
+      <pre style="font-size: 50%; width: 90%;"><code class="c++" data-trim data-noescape>
+      // module declaration
+      export module simple;
+
+      export string hello() {
+        return "Hello, PyCon20!";
+      }
+      </code></pre>
+      </div>
+      <div id="right">
+      <pre style="font-size: 50%; width: 90%;"><code class="c++" data-trim data-noescape>
+      // module usage
+      import simple;
+
+      int main() {
+        cout << hello();
+      }
+      </code></pre>
+      </div>
+      <pre style="font-size: 50%; width: 95%;"><code class="c++" data-trim data-noescape>
+      // ranges
+      vector<int> ints{0,1,2,3,4,5};
+      auto even = [](int i){ return 0 == i % 2; };
+      auto square = [](int i) { return i * i; };
+
+      for (int i : ints | views::filter(even) | views::transform(square)) {
+          cout << i << ' ';
+      }
+      </code></pre>
+  </section>
+
+  <section>
+    <h3>New operators</h3>
+    <div id="left" style="text-align: center;">
+        <h4>Walrus</h4>
+        <img class="plain" style="width: 80%;" src="img/walrus.jpg" /><br/>
+        <p style="font-size: 40%;">Joel Garlich-Miller, U.S. Fish and Wildlife Service</p>
+        <pre style="font-size: 120%;"><code class="python"data-trim data-noescape>
+        :=
+        </code></pre>
+    </div>
+    <div id="right" style="text-align: center;">
+        <h4>Spaceship</h4>
+        <img class="plain" style="width: 80%;" src="img/spaceship.jpg" /><br/>
+        <p style="font-size: 40%;">Grainy B&amp;W image of supposed UFO, Passaic, New Jersey.</p>
+        <pre style="font-size: 120%;"><code class="c++"data-trim data-noescape>
+        <==>
+        </code></pre>
+    </div>
+  </section>
+
+  <section>
+    <h3>Time for some code</h3>
+  </section>
+
+  <section>
+    <h3><i class="yellow">First scenario</i></h3>
+    <p style="font-size: 90%;">C++ helping Python</p>
+    <ul>
+        <li>CPython modules</li>
+        <li>C++ goodies into CPython</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Python <i class="yellow">bindings</i> from C++ projects</h3>
+
+    <div id="left">
+    <p style="font-size: 80%;"><i class="yellow">Unleash the power of C++ in Python:</i></p>
+    <p style="font-size: 60%;">A guide through the bindings generation process</p>
+    <p style="font-size: 50%;"><a href="https://youtu.be/02-IYuDQdTE">https://youtu.be/02-IYuDQdTE</a></p>
+    <img class="plain" style="width: 60%;" src="img/europython.png" />
+    </div>
+    <div id="right">
+        <img class="plain" style="width: 95%;" src="img/unleash_cpp.png" />
+    </div>
+  </section>
+
+  <section>
+    <h3><i class="yellow">Second scenario</i></h3>
+    <p style="font-size: 90%;">C++ helping Python</p>
+    <ul>
+        <li>Embedding Python</li>
+        <li>Extending Qt/C++ with Python</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>The message</h3>
+    <ul>
+        <li>We don't need to pick one language</li>
+        <li>C++ is getting amazing features</li>
+        <li>Keep an eye in other language integrations</li>
+        <li>Let's bring more amazing things to Python land</li>
+    </ul>
+  </section>
+  <!--***************************************************************************-->
+<!--<li class="fragment fade-in" data-fragment-index="1">Project dependencies</li>-->
+</div>
+</div>
+<!--*****************************************************************************-->
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/reveal_config.js"></script>
+
+  <!-- 2. Create hidden header/footer <div> -->
+  <div id="hidden" style="display:none;">
+    <div id="header">
+      <div id="header-left"></div>
+      <div id="header-right"><img src="img/qt.png" width="150px" /></div>
+      <div id="footer-left"><p style="font-size: 14pt;margin-left: 20px;">PyConUS 2020 | <i class="yellow">@cmaureir</i></p></div>
+    </div>
+  </div>
+
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/reveal_header_footer.js"></script>
+<!--*****************************************************************************-->
+</body>
+</html>

@@ -1,0 +1,138 @@
+#header-left {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+#header-right {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+#footer-left {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+/* Slide division */
+#left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:50%;
+  z-index:-10;
+}
+
+#right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:50%;
+}
+
+#rightl {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: left;
+  z-index:-10;
+  width:50%;
+}
+
+#left70 {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:66%;
+  z-index:-10;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#right70 {
+  left:-8.33%;
+  text-align: right;
+  float: right;
+  width:66%;
+  z-index:-10;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#right70l {
+  left:-8.33%;
+  text-align: left;
+  float: right;
+  width:66%;
+  z-index:-10;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#left30 {
+  left:31.25%;
+  top: 75px;
+  float: left;
+  text-align: left;
+  z-index:-10;
+  width:26%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#right30 {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:26%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+/* styles */
+.green {
+  color: #41cd52;
+  font-style: normal;
+}
+
+.green-dark {
+  color: #17a81a;
+  font-style: normal;
+}
+
+.green-soft {
+  color: #77b255;
+  font-style: normal;
+}
+
+.gray {
+  color: #646464;
+  font-style: normal;
+}
+.blue {
+  color: #306998;
+  font-style: normal;
+}
+.blue-light {
+  color: #4B8BBE;
+  font-style: normal;
+}
+.yellow {
+  color: #FFD43B;
+  font-style: normal;
+}
+.yellow-light {
+  color: #FFE873;
+  font-style: normal;
+}
+
+.white {
+  color: #ffffff;
+  font-style: normal;
+}
+
+.red {
+  color: #ff6961;
+  font-style: normal;
+}
