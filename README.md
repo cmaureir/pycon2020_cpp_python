@@ -33,16 +33,17 @@ understand how to extend C++ applications with Python
 
 ## Outline
 
-* Motivation **(5 minutes)**
+* Motivation
   * How to deal with performance issues in Python,
   * Modules that use other languages (NumPy, Pandas, PyTorch, etc),
-* Introduction to C++ **(5 minutes)**
+* Introduction to C++
   * Basic concepts,
   * Evolution of the language,
   * Highlighted C++11, 14, 17, and 20 features
-* Creating a CPython module with C++ **(5 minutes)**,
+* Creating a CPython module with C++
   * `fastglob` a C++ implementation of the `glob` module with `std::filesystem`
-* Extending a C++ application with Python **(10 minutes)**
+  * `fastmath` a C++ implementation of the `math.sqrt` function with `std::transform`
+* Extending a C++ application with Python
   * Creating Python bindings from a C++ library,
   * Embedding a Python interpreter into a C++ application,
   * Run-time interaction of a Qt/C++ desktop application with Python,

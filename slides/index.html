@@ -44,18 +44,19 @@
   <!--***************************************************************************-->
   <section>
     <h2><img style="width: 10%;vertical-align: middle;" class="plain" src="img/cpp_logo.svg"/> ? &#128533;</h2>
-    <h3><i class="red">Wrong</i> conference</h3>
+    <h3 class="fragment fade-in" data-fragment-index="1"><i class="red">Wrong</i> conference</h3>
   </section>
 
   <section>
-    <div id="left">
+    <h2>C++ <i class="yellow">&amp;</i> Python</h2>
+    <div id="left" class="fragment fade-in" data-fragment-index="1">
         <h3><i class="green">Similarities</i></h3>
         <ul>
             <li>General purpose</li>
             <li>Multi paradigm</li>
         </ul>
     </div>
-    <div id="rightl">
+    <div id="rightl" class="fragment fade-in" data-fragment-index="2">
         <h3><i class="red">Differences</i></h3>
         <ul>
             <li>Statically/Dynamically typed</li>
@@ -66,22 +67,19 @@
 
   <section>
     <h3>But usually we hear...</h3>
-    <p>"C++ is too <i class="red">difficult</i>, but it's <i class="green">fast</i>!"</p>
-    <p>"Python is so <i class="green">easy</i>!, but <i class="red">slow</i>..."</p>
+    <p class="fragment fade-in" data-fragment-index="1">"C++ is too <i class="red">difficult</i>, but it's <i class="green">fast</i>!"</p>
+    <p class="fragment fade-in" data-fragment-index="2">"Python is so <i class="green">easy</i>!, but kind of <i class="red">slow</i>..."</p>
   </section>
 
   <section>
-    <h4>Which one then? &#128534;</h4>
-  </section>
-
-  <section>
-    <h3>Let's take a step back...</h3>
+    <h3>Which one then? &#128534;</h3>
+    <h4 class="fragment fade-in" data-fragment-index="1">Let's take a <i class="yellow">step back</i>...</h4>
   </section>
 
   <section>
     <h2>Python <i class="green-soft">roots</i> &#127793;</h2>
-    <div id="left" style="text-align: center;">
-      <h3>ABC</h3>
+    <div id="left" style="text-align: center;" class="fragment fade-in" data-fragment-index="1">
+      <h3 style="margin-top: 10%;">ABC</h3>
       <pre style="font-size: 40%; width: 92%;"><code class="" data-trim data-noescape>
       HOW TO RETURN words document:
          PUT {} IN collection
@@ -91,10 +89,11 @@
                   INSERT word IN collection
          RETURN collection
       </code></pre>
+      <p style="font-size: 40%;">https://homepages.cwi.nl/~steven/abc/</p>
     </div>
-    <div id="right" style="text-align: center;">
+    <div id="right" style="text-align: center;" class="fragment fade-in" data-fragment-index="2">
       <img class="plain" src="img/c.png" style="width: 60%;" />
-      <p style="font-size: 40%;">The C Programming Language, by Brian W. Kernighan and Dennis M. Ritchie (1978)</p>
+      <p style="font-size: 40%;">The C Programming Language,<br/> by Brian W. Kernighan and Dennis M. Ritchie (1978)</p>
     </div>
   </section>
 
@@ -106,33 +105,61 @@
     <h3>Using <i class="yellow">C as glue</i></h3>
     <div id="left">
         <ul style="font-size: 80%;margin-top: 20%;">
-            <li>New functionalities</li>
-            <li>Improving performance</li>
-            <li>Use existing code</li>
+            <li class="fragment fade-in" data-fragment-index="1"><i class="green">New</i> functionalities</li>
+            <li class="fragment fade-in" data-fragment-index="2">Improving <i class="red">performance</i></li>
+            <li class="fragment fade-in" data-fragment-index="3">Use existing code</li>
+            <li class="fragment fade-in" data-fragment-index="4">...and more <i class="yellow">crazy</i> ideas.</li>
         </ul>
     </div>
     <div id="right">
       <ul style="font-size: 80%;">
-          <li><img style="width: 20%;vertical-align: middle;" src="img/numpy-logo-300.png" /> Fortran and C (Array)</li>
-          <li><img style="width: 20%;vertical-align: middle;" src="img/pandas-logo-300.png" /> C (Parser)</li>
-          <li><img style="width: 20%;vertical-align: middle;" src="img/pytorch-logo.png" /> C and C++ (Torch)</li>
+          <li class="fragment fade-in" data-fragment-index="5"><img style="background-color: white;width: 20%;vertical-align: middle;" src="img/numpy-logo-300.png" /> Fortran and C (Array)</li>
+          <li class="fragment fade-in" data-fragment-index="6"><img style="background-color: white;width: 20%;vertical-align: middle;" src="img/pandas-logo-300.png" /> C (Parser)</li>
+          <li class="fragment fade-in" data-fragment-index="7"><img style="background-color: white;width: 20%;vertical-align: middle;" src="img/pytorch-logo.png" /> C and C++ (Torch)</li>
       </ul>
     </div>
   </section>
 
   <section>
     <h3>Why C++ then?</h3>
-    C++ and Python can <i class="yellow">help each other</i>.
+    <p class="fragment fade-in" data-fragment-index="1">C++ and Python can <i class="yellow">help each other</i><br/>in many ways.</p>
   </section>
 
   <section>
-    <h3>Let's learn C++</h3>
+    <h3>How do <i class="yellow">you</i> know?</h3>
+    <div id="left" style="text-align: center;" class="fragment fade-in" data-fragment-index="1">
+        <h4 style="margin-top: 8%;">Qt <i class="green">/kjut/</i></h4>
+        <p style="font-size: 80%;margin-top: 5%;">
+            Cross platform <i class="yellow">C++</i> framework, for <i class="yellow">UI</i> and more.
+        </p>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Automation.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Automotive.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Desktop.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/DTP.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Embeddeddev.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/imac-iphone-ipad.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/IOT.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Medical.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Perpetual_sub.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/stopwatch.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Training.svg"/>
+    </div>
+    <div id="right" style="text-align: center;" class="fragment fade-in" data-fragment-index="2">
+        <img class="plain" style="width: 40%;" src="img/qtforpython.png" /><br/>
+        <a href="https://pyside.org">pyside.org</a><br/>
+        <a href="https://qt.io/qt-for-python">qt.io/qt-for-python</a><br/>
+    </div>
+  </section>
+
+  <section>
+    <h3>Welcome to Learning C++</h3>
+    <p><i class="yellow">(in 1 minute)</i></p>
   </section>
 
   <section>
     <h3>Syntax</h3>
     <div id="left">
-      <pre style="font-size: 50%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
       // C++
 
       int i = 1;
@@ -140,12 +167,12 @@
       std::string s = "hello";
       std::vector&lt;int&gt; l = {1,2,3,4};
       </code></pre>
-      <pre style="font-size: 50%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
       int add(int a, int b) {
         return a + b;
       }
       </code></pre>
-      <pre style="font-size: 50%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 92%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
       int main() {
         int c = add(3, 2);
         std::cout << c << std::endl;
@@ -154,7 +181,7 @@
       </code></pre>
     </div>
     <div id="right">
-      <pre style="font-size: 50%; width: 90%;"><code class="python" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="1"><code class="python" data-trim data-noescape>
       # Python
 
       i = 1
@@ -162,12 +189,12 @@
       s = "hello"
       l = [1,2,3,4]
       </code></pre>
-      <pre style="font-size: 50%; width: 90%;"><code class="python" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="2"><code class="python" data-trim data-noescape>
       def add(a, b):
         return a + b
         &nbsp;
       </code></pre>
-      <pre style="font-size: 50%; width: 90%;"><code class="python" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="3"><code class="python" data-trim data-noescape>
       if __name__ == "__main__":
         c = add(3, 2)
         print(c)
@@ -175,40 +202,56 @@
         &nbsp;
       </code></pre>
     </div>
+  </section>
+
+  <section>
+    <h3>Execution</h3>
+    <div id="left">
+      <pre style="font-size: 50%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="bash" data-trim data-noescape>
+      $ g++ main.cpp # compilation
+      $ ./a.out
+      </code></pre>
+    </div>
+    <div id="right">
+      <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="1"><code class="bash" data-trim data-noescape>
+      $ python main.py
+      </code></pre>
+    </div>
 
   </section>
 
   <section>
     <h3>Congratulations,<br/> you just learned C++ &#127881;</h3>
+    <p><i class="yellow">(or at least some concepts)</i></p>
   </section>
 
   <section>
-    <h3>The Evolution</h3>
+    <h3>The Evolution &#128300;</h3>
     <i class="yellow">From C++11, to C++20</i>
   </section>
 
   <section>
     <h3>C++11</h3>
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
       // 'auto' type
       auto a = 0.74;
       auto b = "hello";
       </code></pre>
 
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
       // tuples
       auto triple = std::make_tuple(1,2,3);
       std::tie(x, y, z) = triple;
       </code></pre>
 
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
       // dictionaries
       auto d = std::unordered_map&lt;int,std::string&gt;({4, "Mary"},
                                                    {2, "John"});
       auto value = d[4];
       </code></pre>
 
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="4"><code class="c++" data-trim data-noescape>
       // lambdas
       std::sort(v.begin(), v.end(),
             [](int x, int y) { return std::abs(x) < std::abs(y)});
@@ -217,22 +260,22 @@
 
   <section>
     <h3>C++14</h3>
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
       // 'auto' return type
       auto add(int x, int y) {
           return x + y;
       }
       </code></pre>
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
       // variable templates
-      template <typename T>
+      template &lt;typename T&gt;
       constexpr T pi = T(3.14159265359...);
       </code></pre>
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
       // binary literals
       auto b = 0b1101;
       </code></pre>
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="4"><code class="c++" data-trim data-noescape>
       // digits separators
       auto n = 1'000'000;
       </code></pre>
@@ -240,19 +283,20 @@
 
   <section>
     <h3>C++17</h3>
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
       // unpack when calling functions
-      std::pair<int, int> origin() {
-          return std::pair<int, int> {0, 0}
+      std::pair&lt;int, int&gt; origin() {
+          return std::pair&lt;int, int&gt; {0, 0}
       }
 
       auto [x, y] = origin();
       </code></pre>
 
-      <pre style="font-size: 55%; width: 92%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
       // unpack map values in loop
-      auto items = std::unordered_map<int,std::string>({4, "Mary"}, {2, "John"});
-      for ( const auto& [key, value]: items) {
+      auto items = std::unordered_map&lt;int, std::string&gt;({4, "Mary"},
+                                                        {2, "John"});
+      for (const auto& [key, value]: items) {
           //...
       }
       </code></pre>
@@ -261,17 +305,17 @@
   <section>
     <h3>C++20</h3>
       <div id="left">
-      <pre style="font-size: 50%; width: 90%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
       // module declaration
       export module simple;
 
       export string hello() {
-        return "Hello, PyCon20!";
+        return "Hello, PyCon2020!";
       }
       </code></pre>
       </div>
       <div id="right">
-      <pre style="font-size: 50%; width: 90%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
       // module usage
       import simple;
 
@@ -280,7 +324,7 @@
       }
       </code></pre>
       </div>
-      <pre style="font-size: 50%; width: 95%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 50%; width: 95%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
       // ranges
       vector<int> ints{0,1,2,3,4,5};
       auto even = [](int i){ return 0 == i % 2; };
@@ -294,16 +338,16 @@
 
   <section>
     <h3>New operators</h3>
-    <div id="left" style="text-align: center;">
-        <h4>Walrus</h4>
+    <div id="left" style="text-align: center;" class="fragment fade-in" data-fragment-index="1">
+        <h4><i class="yellow">Walrus</i></h4>
         <img class="plain" style="width: 80%;" src="img/walrus.jpg" /><br/>
         <p style="font-size: 40%;">Joel Garlich-Miller, U.S. Fish and Wildlife Service</p>
         <pre style="font-size: 120%;"><code class="python"data-trim data-noescape>
         :=
         </code></pre>
     </div>
-    <div id="right" style="text-align: center;">
-        <h4>Spaceship</h4>
+    <div id="right" style="text-align: center;" class="fragment fade-in" data-fragment-index="2">
+        <h4><i class="yellow">Spaceship</i></h4>
         <img class="plain" style="width: 80%;" src="img/spaceship.jpg" /><br/>
         <p style="font-size: 40%;">Grainy B&amp;W image of supposed UFO, Passaic, New Jersey.</p>
         <pre style="font-size: 120%;"><code class="c++"data-trim data-noescape>
@@ -314,14 +358,22 @@
 
   <section>
     <h3>Time for some code</h3>
+    <img style="width: 40%;" src="img/hack.gif" />
   </section>
 
   <section>
     <h3><i class="yellow">First scenario</i></h3>
-    <p style="font-size: 90%;">C++ helping Python</p>
+    <p style="font-size: 90%;">C++ <i class="green">helping</i> Python</p>
     <ul>
-        <li>CPython modules</li>
-        <li>C++ goodies into CPython</li>
+        <li>CPython modules:</li>
+        <ul style="font-size: 80%;">
+            <li><i class="gray-light">code/hello/</i></li>
+        </ul>
+        <li>C++ goodies into CPython:</li>
+        <ul style="font-size: 80%;">
+            <li><i class="gray-light">code/fastglob/</i></li>
+            <li><i class="gray-light">code/fastmath/</i></li>
+        </ul>
     </ul>
   </section>
 
@@ -341,22 +393,65 @@
 
   <section>
     <h3><i class="yellow">Second scenario</i></h3>
-    <p style="font-size: 90%;">C++ helping Python</p>
+    <p style="font-size: 90%;">Python <i class="green">helping</i> C++</p>
     <ul>
         <li>Embedding Python</li>
+        <ul style="font-size: 80%;">
+            <li><i class="gray-light">code/embedding/</i></li>
+        </ul>
         <li>Extending Qt/C++ with Python</li>
+        <ul style="font-size: 80%;">
+            <li><i class="gray-light">code/scriptableapplication/</i></li>
+        </ul>
     </ul>
   </section>
 
   <section>
-    <h3>The message</h3>
+    <h3>What now?</h3>
     <ul>
-        <li>We don't need to pick one language</li>
-        <li>C++ is getting amazing features</li>
-        <li>Keep an eye in other language integration</li>
-        <li>Let's bring more amazing things to Python land</li>
+        <li class="fragment fade-in" data-fragment-index="1"><i class="red">Don't</i> be afraid of <img style="width: 5%;vertical-align: middle;" class="plain" src="img/cpp_logo.svg"/></li>
+        <ul style="font-size: 80%;">
+            <li class="fragment fade-in" data-fragment-index="1">New amazing features!</li>
+        </ul>
+        <li class="fragment fade-in" data-fragment-index="2">Keep an eye in <i class="yellow">other</i> languages &#128064;</li>
+        <ul style="font-size: 80%;">
+            <li class="fragment fade-in" data-fragment-index="2">We don't need to pick <i class="red">only</i> one.</li>
+        </ul>
+        <li class="fragment fade-in" data-fragment-index="3">Let's bring more amazing things to &#128013;</li>
     </ul>
   </section>
+
+  <section>
+    <!--♥ -->
+    <h2>C++ <i class="red">❤ </i> Python</h2>
+    <h4><i class="yellow">From <code style="font-weight: normal; color: #aaaaaa;font-size:80%;">__modules__</code> to <i class="blue">ₕybᵣᵢd</i> applications</i></h4>
+    <p style="font-size: 60%;margin-top: 10%;">
+      <span style="font-size: 130%;">Dr. <i class="yellow">Cristián</i> Maureira-Fredes<br/></span>
+      <i class="blue-light">R&D Manager</i> @ TQtC
+            <br/>
+            <br/>
+        <img class="plain" src="img/twitter.png" style="height: 50px;">
+        <img class="plain" src="img/github_white.png"  style="height: 50px;">
+        <img class="plain" src="img/linkedin.png"  style="height: 50px;"><br/>
+           @cmaureir<br/>
+    </p>
+  </section>
+
+  <section data-background="img/berlin-landscape.png">
+    <div id="left30">
+        <h3 style="font-size: 140%;">Support your local <i class="yellow">groups</i>!</h3>
+    </div>
+    <div id="right70">
+        <img src="img/pyladies.jpeg"  style="background: rgba(0,0,0,0);width:50%; border: 0px;"><br/>
+        <p>
+        <img src="img/bear.png"  style="background: rgba(0,0,0,0);width:30%; border: 0px;border-radius: 50%;">
+        <img src="img/pyberlin.jpg"  style="background: rgba(0,0,0,0);width:30%; border: 0px;border-radius: 50%;">
+        <img src="img/pydata.png"  style="background: rgba(0,0,0,0);width:30%; border: 0px;border-radius: 50%;">
+        </p>
+    </div>
+  </section>
+
+
   <!--***************************************************************************-->
 <!--<li class="fragment fade-in" data-fragment-index="1">Project dependencies</li>-->
 </div>

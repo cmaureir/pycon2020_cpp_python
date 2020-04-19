@@ -16,7 +16,7 @@ def benchmark(opt, recursive=False):
         else:
             a = list(Path("data").glob("**"))
     elif opt == "fglob":
-        a = glob("data", recursive=recursive)
+        a = fglob("data", recursive=recursive)
     total = time.time() - start
     print(f"{total:.5f}s")
 
