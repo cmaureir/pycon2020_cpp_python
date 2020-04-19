@@ -1,5 +1,19 @@
 # Code examples
 
+Inside some directories, there is a `Makefile` file that build each project,
+which is nothing else than a `python setup.py install`.
+
+Please use a virtual environment to avoid installing this test modules in your
+system, or user space:
+```
+cd code/
+python -m venv env
+source env/bin/activate   # for Linux/macOS
+env\Scripts\activate.bat  # for Windows
+```
+
+## Description
+
 * [hello/](hello/), simple Python module written in C that contains only
   a function to print a message.
 

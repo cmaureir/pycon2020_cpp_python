@@ -7,12 +7,12 @@ def changeMode():
     text_edit = mainWindow.getTextEdit()
 
     if isDarkMode:
-        mainWindow.setStyleSheet("background-color: #e8e8e7; color: black;")
-        text_edit.setStyleSheet("background-color: white;")
+        mainWindow.setStyleSheet("font-size: 16px;background-color: #e8e8e7; color: black;")
+        text_edit.setStyleSheet("font-size: 16px;background-color: white;")
         isDarkMode = False
     else:
-        mainWindow.setStyleSheet("background-color: #31363b; color: white;")
-        text_edit.setStyleSheet("background-color: gray;")
+        mainWindow.setStyleSheet("font-size: 16px;background-color: #31363b; color: white;")
+        text_edit.setStyleSheet("font-size: 16px;background-color: gray;")
         isDarkMode = True
 
 tool_bar = mainWindow.getToolBar()

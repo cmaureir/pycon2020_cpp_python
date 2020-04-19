@@ -126,9 +126,9 @@ MainWindow::MainWindow()
             if (!f.open(QFile::ReadOnly | QFile::Text)) break;
             QTextStream in(&f);
             if (PythonUtils::runScript(in.readAll().split("\n")))
-                qDebug() << "Plugin loaded";
+                qDebug() << "Plugin loaded: " << filename;
             else
-                qDebug() << "Error while loading plugin";
+                qDebug() << "Error while loading plugin: " << filename;
         }
     }
 

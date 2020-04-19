@@ -8,6 +8,7 @@ static PyObject* simple_hello(PyObject* self, PyObject* args){
 static char simple_docs[] =
     "hello(): print hello message\n";
 
+// Functions definition
 static PyMethodDef simple_funcs[] = {
     {"hello",                   // ml_name
      (PyCFunction)simple_hello, // ml_meth
@@ -16,6 +17,7 @@ static PyMethodDef simple_funcs[] = {
     {}                          // sentinel
 };
 
+// Module definition
 static struct PyModuleDef simplemodule = {
     PyModuleDef_HEAD_INIT, // m_base
     "simple",              // m_name
@@ -24,6 +26,7 @@ static struct PyModuleDef simplemodule = {
     simple_funcs           // m_methods
 };
 
+// Module initialization
 PyMODINIT_FUNC PyInit_simple(void){
     return PyModule_Create(&simplemodule);
 }

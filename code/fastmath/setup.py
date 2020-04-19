@@ -2,8 +2,6 @@
 import os
 from distutils.core import setup, Extension
 
-os.environ["CC"] = "g++"
-
 setup(name='fastmath', version='1.0',
       ext_modules=[
         Extension('fastmath', ['fastmath.cpp'],
