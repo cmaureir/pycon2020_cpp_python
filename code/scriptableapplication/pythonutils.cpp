@@ -63,12 +63,7 @@
 #include <sbkmodule.h>
 
 /* from AppLib bindings */
-
-#if PY_MAJOR_VERSION >= 3
-    extern "C" PyObject *PyInit_AppLib();
-#else
-    extern "C" void initAppLib();
-#endif
+extern "C" PyObject *PyInit_AppLib();
 
 // This variable stores all Python types exported by this module.
 extern PyTypeObject **SbkAppLibTypes;
@@ -88,45 +83,15 @@ static void cleanup()
     }
 }
 
-static const char virtualEnvVar[] = "VIRTUAL_ENV";
-
-// If there is an active python virtual environment, use that environment's
-// packages location.
-static void initVirtualEnvironment()
-{
-    QByteArray virtualEnvPath = qgetenv(virtualEnvVar);
-    // As of Python 3.8, Python is no longer able to run stand-alone in a
-    // virtualenv due to missing libraries. Add the path to the modules instead.
-    if (QOperatingSystemVersion::currentType() == QOperatingSystemVersion::Windows
-        && (PY_MAJOR_VERSION > 3 || (PY_MAJOR_VERSION == 3 && PY_MINOR_VERSION >= 8))) {
-        qputenv("PYTHONPATH", virtualEnvPath + "\\Lib\\site-packages");
-    } else {
-        qDebug() << virtualEnvPath;
-        //wchar_t *homePath = new wchar_t[virtualEnvPath.size()];
-        //mbstowcs(&homePath[0], virtualEnvPath.constData(), virtualEnvPath.size());
-        //qputenv("PYTHONHOME", virtualEnvPath);
-        //const wchar_t *name(virtualEnvPath.constData());
-        //Py_SetPythonHome(homePath);
-    }
-}
-
 State init()
 {
     if (state > PythonUninitialized)
         return state;
 
-    if (qEnvironmentVariableIsSet(virtualEnvVar))
-        initVirtualEnvironment();
-
     Py_Initialize();
     qAddPostRoutine(cleanup);
     state = PythonInitialized;
-#if PY_MAJOR_VERSION >= 3
     const bool pythonInitialized = PyInit_AppLib() != nullptr;
-#else
-    const bool pythonInitialized = true;
-    initAppLib();
-#endif
     const bool pyErrorOccurred = PyErr_Occurred() != nullptr;
     if (pythonInitialized && !pyErrorOccurred) {
         state = AppModuleLoaded;
